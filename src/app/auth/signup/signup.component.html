@@ -1,0 +1,81 @@
+<div class="login">
+  <div *ngIf="isLoading" style="text-align: center;">
+    <app-loading-spinner></app-loading-spinner>
+  </div>
+  <div *ngIf="error">
+    <p>{{error}}</p>
+  </div>
+  <div class="deze">
+    <div class="beide">
+      <h1>Welcome to Fantastic Books...</h1>
+      <div class="formcontainer">
+        <form #f="ngForm" (ngSubmit)="onSubmit(f)" *ngIf="!isLoading">
+          <label for="email">E-mailadres:</label><br>
+          <input
+            type="text"
+            id="email"
+            class="form-control"
+            ngModel
+            name="email"
+            required
+            email
+            value=""><br>
+          <label for="naam">Naam:</label><br>
+          <input
+            type="text"
+            id="naam"
+            class="form-control"
+            ngModel
+            name="naam"
+            required
+
+            value=""><br>
+          <label for="postcode">Postcode:</label><br>
+          <input
+            type="text"
+            id="postcode"
+            class="form-control"
+            ngModel
+            name="postcode"
+            required
+
+            value=""><br>
+          <label for="woonplaats">Woonplaats:</label><br>
+          <input
+            type="text"
+            id="woonplaats"
+            class="form-control"
+            ngModel
+            name="woonplaats"
+            required
+
+            value=""><br>
+          <label for="huisnummer">Huisnummer:</label><br>
+          <input
+            type="text"
+            id="huisnummer"
+            class="form-control"
+            ngModel
+            name="huisnummer"
+            required
+
+            value=""><br>
+          <label for="wachtwoord">Wachtwoord:</label><br>
+          <input type="password"
+                 id="wachtwoord"
+                 ngModel
+                 name="wachtwoord"
+                 required
+                 minlength="5"
+                 value=""><br><br>
+          <button class="button" type="submit" value="Submit" [disabled]="!f.valid">Sign up</button>
+          <button class="button" type="button" (click)="onSwitchMode()">Switch to login</button>
+        </form>
+        <app-alert [message]="message" *ngIf="message" (close)="onClosePopUp()"></app-alert>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

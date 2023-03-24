@@ -1,0 +1,15 @@
+<div class="store" *ngIf="!showDetails">
+
+<ul class="list">
+  <ng-container *ngFor="let book of bookList">
+    <li *ngIf="book.categorie === categorie">
+      <div class="bookContainer" >
+        <!--<app-item [routerLink]="['/itemdetails', book]" class="item" [book]="book"></app-item>-->
+        <app-item routerLink="/itemdetails" [state]="book" class="item" [book]="book"></app-item>
+      </div></li>
+  </ng-container>
+
+</ul>
+</div>
+
+<!--<app-itemdetails *ngIf="showDetails" [book]="book"></app-itemdetails>-->

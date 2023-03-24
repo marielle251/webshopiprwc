@@ -1,0 +1,67 @@
+<section class="home">
+  <section class="top">
+    <app-navigation></app-navigation>
+    <div class="afbleeding">
+      <img *ngIf="categorie === 'harrypotter'" src="assets/images/hp1.jpg">
+      <img *ngIf="categorie === 'scholomance'" src="assets/images/deadlyed.jpg">
+      <img *ngIf="categorie === 'standalones'" src="assets/images/dark.jpg">
+      <img *ngIf="categorie === 'witcher'" src="assets/images/witcher10.jpg">
+      <img *ngIf="categorie === 'lordoftherings'" src="assets/images/rings2.jpg">
+      <img *ngIf="categorie === 'folkofair'" src="assets/images/folkair1.jpg">
+
+
+    </div>
+    <div class="tekst">
+      <h1 *ngIf="categorie === 'harrypotter'">The Wizarding World of Harry Potter</h1>
+      <h1 *ngIf="categorie === 'scholomance'">The Scholomance</h1>
+      <h1 *ngIf="categorie === 'witcher'">The Witcher</h1>
+      <h1 *ngIf="categorie === 'lordoftherings'">Lord Of The Rings</h1>
+      <h1 *ngIf="categorie === 'folkofair'">The Folk of Air</h1>
+      <h1 *ngIf="categorie === 'standalone'">Other fantasy books</h1>
+
+
+
+      <p *ngIf="categorie === 'harrypotter'" >The first Harry Potter book, Harry Potter and the Philosopher’s Stone,
+                                            <br> was published by Bloomsbury in 1997 to immediate popular and <br>critical acclaim.
+                                            Six further best-selling books, three companion books, <br> a playscript and
+                                            two screenplays have since followed.<br> The Harry Potter books
+                                            have been translated into over 80 languages,
+                                            <br> won multiple awards, and sold more than 500 million copies worldwide,
+                                            <br> becoming the best-selling book series in history...</p>
+      <p *ngIf="categorie === 'scholomance'">In Wisdom, Shelter - The official motto of the Scholomance. <br>
+                                            The Scholomance is a school for magical children. Don't expect a <br>
+                                            "Harry Potter" type of school, because this school has no adults in it <br>
+                                              and the children never leave for four years, if they survive. From <br>
+                                                the time the students arrive until they "Graduate,” <br>
+                                      they are lucky to be the 1-in-4 that survive.<br></p>
+      <p *ngIf="categorie === 'witcher'">The Witcher is a series of six fantasy novels <br>
+                                        and 15 short stories written by Polish author Andrzej Sapkowski. <br>
+                                        The series revolves around the eponymous "witcher", Geralt of Rivia.<br>
+                                        In Sapkowski's works, "witchers" are beast hunters who<br>
+                                       develop supernatural abilities at a young age to battle <br>
+                                      wild beasts and monsters. The books were such a success that <br>
+                                        a series of 3 games was made and a Netflix series was made.</p>
+      <p *ngIf="categorie === 'folkofair'">The Folk of the Air is a young adult fantasy book series<br>
+                                          by Holly Black, published by Little Brown Books <br>
+                                          The story follows the journey of mortal girl Jude Duarte<br>
+                                          and faerie prince Cardan Greenbriar as they navigate
+                                         <br>the world of hate, betrayal, and contempt along with feelings <br>
+                                       for each other. The series is a New York Times Best Seller.</p>
+      <p *ngIf="categorie === 'lordoftherings'">The Lord of the Rings is an epic high-fantasy novel <br>
+                                                by English author and scholar J. R. R. Tolkien. <br>
+                                               Set in Middle-earth, the story began as a sequel to <br>
+                                              Tolkien's 1937 children's book The Hobbit, but <br>
+                                              0eventually developed into a much larger work. <br>
+                                             Written in stages between 1937 and 1949, The <br>
+                                             Lord of the Rings is one of the best-selling books <br>
+                                         ever written, with over 150 million copies sold.[2]</p>
+    </div>
+
+
+
+  </section>
+  <app-store [categorie]="categorie"></app-store>
+</section>
+
+
+

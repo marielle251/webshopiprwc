@@ -1,0 +1,56 @@
+<!--<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li style="float:right"><a class="active" href="" (click)="goShoppingcart()">Shopping Cart</a></li>
+</ul>-->
+<!--
+<section class="helemaal">
+  <section class="name">
+    <h1>Books</h1>
+  </section>
+  <section class="header">
+    <section class="navbar">
+      <button (click)="goHome()">Home</button>
+      <button *ngIf="showAdmin">Admin portal</button>
+      <button style="float:right" (click)="goShoppingcart()">
+        <div class="shoppingcartcel">
+          <span> Shopping Cart </span>
+          <div class="dropdown-content">
+            <p>je mandje</p>
+            <button>Bestellen</button>
+          </div>
+        </div>
+      </button>
+    </section>
+  </section>
+</section>
+-->
+
+
+<section class="header">
+  <!--<section class="storename">
+
+    <h1>Fantastical Books</h1>
+  </section>-->
+  <section class="navbar">
+    <button id="home" (click)="goHome($event)">Home</button>
+    <button id="harrpotter" [routerLink]="['/homeView', 'harrypotter']">Harry Potter</button>
+    <button id="witcher" [routerLink]="['/homeView', 'witcher']">The Witcher</button>
+    <button id="lordoftherings" [routerLink]="['/homeView', 'lordoftherings']">Lord of the Rings</button>
+    <button id="folkofair" [routerLink]="['/homeView', 'folkofair']">The Folk of Air</button>
+    <button id="scholomance" [routerLink]="['/homeView', 'scholomance']">The Scholomance</button>
+    <button id="standalones" [routerLink]="['/homeView', 'standalone']">Standalones</button>
+    <button id="admin" [routerLink]="['/adminLogin']">Admin portal</button>
+    <button style="float:right" (click)="goShoppingcart()">
+      <div class="shoppingcartcel">
+        <span> Shopping Cart </span>
+        <div class="dropdown-content">
+          <p>je mandje</p>
+          <button>Bestellen</button>
+        </div>
+      </div>
+    </button>
+  </section>
+</section>
+

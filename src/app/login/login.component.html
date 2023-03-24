@@ -1,0 +1,22 @@
+<div class="login" *ngIf="!klant">
+  <form (ngSubmit)="onSubmit()" #f="ngForm">
+    <label for="klantid">Klant ID:</label><br>
+    <input
+      type="text"
+      id="klantid"
+      class="form-control"
+      ngModel
+      name="klantid"
+      value=""><br>
+
+    <label for="wachtwoord">Wachtwoord:</label><br>
+    <input type="text"
+           id="wachtwoord"
+           ngModel
+           name="wachtwoord"
+           value=""><br><br>
+    <button class="button" type="submit" value="Submit">Submit</button>
+  </form>
+</div>
+
+

@@ -1,0 +1,94 @@
+
+
+.hoofd {
+  width: 100%;
+  max-width: 1600px;
+  margin: auto;
+  padding: 0px 25px;
+  box-sizing: border-box;
+  position: relative;
+  //display: flex;
+  justify-content: center;
+
+  .tekst {
+    color: white;
+    text-align: center;
+    font-family: "Century Gothic";
+    border-top: 1px solid #f9f9f9;
+    border-bottom: 1px solid #f9f9f9;;
+    width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: lighter;
+
+  }
+
+  .buttons {
+    margin: auto;
+    width: 680px;
+  }
+
+  button {
+    //display: block;
+    color: white;
+    //background-color: #232223;
+    //background-color: #232223;
+    //background-color: #514A92;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: 0 solid #232223;
+    border-radius: 2px;
+    background-color: #514A92;
+    width: 300px;
+    margin: 20px;
+  }
+  button:hover {
+    cursor: pointer;
+  }
+
+  .add {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    color: white;
+    padding: 25px;
+
+    input {
+      width: 500px;
+      margin: 10px;
+    }
+
+    p {
+      font-family: "Century Gothic";
+    }
+
+    label {
+      font-family: "Century Gothic";
+      margin: 10px;
+
+    }
+
+  }
+
+
+    .list {
+      margin-left: 50px;
+      margin-right: 50px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-row-gap: 40px;
+      grid-column-gap: 40px;
+      padding: 40px;
+      list-style: none;
+    }
+
+
+}
+
+
+
+

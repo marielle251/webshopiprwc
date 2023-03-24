@@ -1,0 +1,21 @@
+<app-navigation></app-navigation>
+<div class="shoppingcart">
+  <h1>Books in your cart:</h1>
+  <div class="books">
+    <li>
+      <ul *ngFor="let book of cart">
+        <div class="book">
+          <img [src]="book.image" />
+          <p>{{book.title}} <br> {{book.price}} €</p>
+        </div>
+      </ul>
+    </li>
+  </div>
+  <div class="price">
+    <p>Total: {{total}} €</p>
+    <button (click)="onOrder()">Order</button>
+
+  </div>
+</div>
+
+

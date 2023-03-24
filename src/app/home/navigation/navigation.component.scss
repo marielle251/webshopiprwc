@@ -1,0 +1,89 @@
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  //background-color: #343335;
+  //background-color: #232223;
+  background-color: #080D1F;
+
+  //background-color: #1a569a;
+}
+
+.storename {
+  //background-color: #260248;
+  //background-color: 	#746d9b;
+  //background-color: #000009;
+ // background-color: #191c28;
+  background-color: #080D1F;
+  color: snow;
+
+  display: flex;
+  h1 {
+   // font-family: "Baskerville Old Face";
+    font-family: Sofia Pro,serif;
+    font-size: 25px;
+    font-weight: lighter;
+  }
+
+  img {
+    //float: left;
+    height: 100px;
+  }
+}
+
+.header {
+  background-color: #260248;
+  font-family: Arial, serif;
+  font-style: italic;
+  font-size: 24px;
+
+  h1 {
+   // padding-top: 10px;
+    //padding-left: 20px;
+  }
+
+}
+
+button {
+  float: left;
+
+}
+
+button {
+  display: block;
+  color: white;
+  //background-color: #232223;
+  //background-color: #232223;
+  //background-color: #514A92;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border: 0 solid #232223;
+  background-color: #080D1F;;
+}
+
+/* Change the link color to #111 (black) on hover */
+button:hover {
+  background-color: #514A92;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  white-space: pre-wrap
+}
+.shoppingcartcel {
+  position: relative;
+  display: inline-block;
+}
+
+.shoppingcartcel:hover {
+  display: block;
+}

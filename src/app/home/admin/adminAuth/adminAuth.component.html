@@ -1,0 +1,42 @@
+<app-navigation></app-navigation>
+<div class="login">
+  <div style="text-align: center;">
+    <!--<app-loading-spinner></app-loading-spinner>-->
+  </div>
+  <div *ngIf="error">
+    <p>{{error}}</p>
+  </div>
+  <div class="deze">
+    <div class="beide">
+      <h1>Sign in as admin...</h1>
+      <div class="formcontainer">
+        <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+          <label for="email">E-mailadres:</label><br>
+          <input
+            type="text"
+            id="email"
+            class="form-control"
+            ngModel
+            name="email"
+            required
+            email
+            value=""><br>
+
+          <label for="wachtwoord">Wachtwoord:</label><br>
+          <input type="password"
+                 id="wachtwoord"
+                 ngModel
+                 name="wachtwoord"
+                 required
+                 minlength="5"
+                 value=""><br><br>
+          <button class="button" type="submit" value="Submit" [disabled]="!f.valid">Login</button>
+
+        </form>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

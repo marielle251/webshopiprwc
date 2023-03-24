@@ -1,0 +1,38 @@
+.login {
+  margin: auto;
+  width: 300px;
+  background-color: #203432;
+  padding: 40px;
+  color: snow;
+
+  input {
+    padding: 5px;
+    margin: 10px;
+  }
+
+  label {
+    margin: 10px;
+  }
+
+  button {
+    align-self: center;
+    //margin: 20px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 150px;
+    //background-color:	#d2deeb;
+    background-color: #a5d2ca;
+    color: #122321;
+    border: #122321;
+  }
+
+  button:hover {
+    cursor: pointer;
+    background-color: #5a7e77;
+    color: snow;
+  }
+
+
+
+}

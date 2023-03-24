@@ -1,0 +1,115 @@
+<app-navigation></app-navigation>
+<div class="hoofd">
+  <div class="algemeen" *ngIf="algemeen">
+    <div class="tekst">
+      <h1>What do you want to do?</h1>
+    </div>
+    <div class="buttons">
+      <button (click)="onAdd()">Add an item</button>
+      <button>Delete/change an item</button>
+    </div>
+  </div>
+
+
+  <div class="tweede" *ngIf="tweede">
+    <div class="tekst">
+      <h1>What book do you want to delete?</h1>
+    </div>
+    <ul class="list">
+      <li *ngFor="let book of bookList">
+        <app-item (click)="onDelete(book)" class="item" [book]="book"></app-item>
+      </li>
+    </ul>
+  </div>
+
+  <div class="add" *ngIf="add">
+    <p>Fill in the input fields to add a new item:</p>
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+      <label for="title">Title:</label><br>
+      <input
+        type="text"
+        id="title"
+        class="form-control"
+        ngModel
+        name="title"
+        required
+
+        value=""><br>
+      <label for="author">Author:</label><br>
+      <input
+        type="text"
+        id="author"
+        class="form-control"
+        ngModel
+        name="author"
+
+        value=""><br>
+      <label for="description">Description:</label><br>
+      <input
+        type="text"
+        id="description"
+        class="form-control"
+        ngModel
+        name="description"
+
+        value=""><br>
+      <label for="genre">Genre:</label><br>
+      <input
+        type="text"
+        id="genre"
+        class="form-control"
+        ngModel
+        name="genre"
+
+        value=""><br>
+      <label for="image">Image:</label><br>
+      <input
+        type="text"
+        id="image"
+        class="form-control"
+        ngModel
+        name="image"
+
+        value=""><br>
+
+
+
+      <label for="language">Language:</label><br>
+      <input
+        type="text"
+        id="language"
+        class="form-control"
+        ngModel
+        name="language"
+
+        value=""><br>
+      <label for="price">Price:</label><br>
+      <input
+        type="text"
+        id="price"
+        class="form-control"
+        ngModel
+        name="price"
+        value=""><br>
+      <label for="pages">Pages:</label><br>
+      <input
+        type="text"
+        id="pages"
+        class="form-control"
+        ngModel
+        name="pages"
+        value=""><br>
+      <label for="pages">Category:</label><br>
+      <input
+        type="text"
+        id="category"
+        class="form-control"
+        ngModel
+        name="category"
+        value=""><br>
+      <button class="button" type="submit" value="Submit" [disabled]="!f.valid">Add</button>
+    </form>
+  </div>
+
+</div>
+
